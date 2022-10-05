@@ -1,0 +1,47 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.mySwiper{
+  background: linear-gradient(180deg, #1676BB 0%, #80CAF7 100%);
+  border-radius: 20px 0px 0px 0px;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  /* height: 200px; */
+  border-radius: 30%;
+  background-color: aqua;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+}
+.swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right{
+  border-radius: 30px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  color: white;
+  font-weight: 700;
+}
