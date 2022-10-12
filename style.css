@@ -1,13 +1,13 @@
 /*Configuracion*/
 @font-face {
     font-family: 'GraphikTT';
-    src: url('assets/GraphikRegular.otf')format('truetype');
+    src: url('assets/fonts/GraphikRegular.otf')format('truetype');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: 'GraphikTT';
-    src: url('assets/GraphikBold.otf')format('truetype');
+    src: url('assets/fonts/GraphikBold.otf')format('truetype');
     font-style: normal;
     font-weight: bold;
 }
@@ -29,6 +29,9 @@ a{
     --white:white;
     --black:black;
 }
+body{
+    background-color: var(--white);
+}
 /*prenav*/
 .prenav{
     background-color: var(--primary_color);
@@ -36,6 +39,7 @@ a{
     display: flex;
     font-size: 14px;
     height:45px;
+    justify-content: center;
 }
 .prenav img{
     width: 24px;
@@ -58,6 +62,7 @@ nav{
     display: flex;
     align-items: center;
     padding-right: 200px;
+    height: 100px;
 }
 nav a{
     color: var(--white);
@@ -82,8 +87,8 @@ nav .logo{
 }
 
 .logo img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 80px;
     margin: 10px;
 }
 
@@ -95,11 +100,11 @@ nav .logo{
 .barrita{
     background-color: var(--white);
     width: 5px;
-    height: 100px;
+    height: 80px;
 }
 /*contenido*/
 .contenido{
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .contenido section{
@@ -109,13 +114,16 @@ nav .logo{
 /*section main*/
 
 .main{
+    /* background-color; */
+    margin: 30px 0;
+    background: linear-gradient(90deg, #FF0000 0%, rgba(255, 0, 0, 0.740888) 32.29%, rgba(255, 0, 0, 0.488095) 61.98%, rgba(255, 109, 109, 0.279695) 99.99%, rgba(255, 255, 255, 0) 100%);
+    font-weight: 400;
+}
+
+.main article{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    /* background-color; */
-    margin: 30px 10px;
-    background: linear-gradient(90deg, rgba(0, 148, 255, 0.5) 3.94%, rgba(255, 255, 255, 0) 100%);
-    font-weight: 400;
 }
 .main .title{
     margin: 0 0 30px 50px;
@@ -187,24 +195,39 @@ h2{
 }
 /*Somos 2*/
 .somos2{
-    border: none;
+    display: flex;
+    align-items: end;
 }
-.somos2 img{
+.barblue{
+    background-color: var(--primary_color);
+    width: 100vw;
+    height: 350px;
+    z-index: -1;
+    position: absolute;
+    margin-bottom: 50px;
+}
+.somos2__article{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.somos2__article img{
     width: 600px;
     height: 560px;
     z-index: 1;
-}
-.textBlue div{
-    background-color: var(--primary_color);
-    width: 190%;
-    z-index: 0;
+    border: solid 20px var(--white);
+    border-radius: 20px;
 }
 .textBlue p{
     padding: 20px;
     width: 600px;
     color: var(--white);
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 400;
+    line-height: 55px;
+    z-index: 3;
+    margin: 0 0 30px 0;
 }
 .textBlue h2{
     text-align: left;
@@ -222,10 +245,13 @@ h2{
     background-color: var(--light-blue);
     justify-content: space-evenly;
     padding: 20px 10px;
+    flex-wrap: wrap;
+    border-radius: 20px;
 }
 .marcas img{
-    width: 300px;
-    height: 150px;
+    width: 230px;
+    height: 100px;
+    margin: 10px 25px;
 }
 .proveedores p{
     width:80%;
@@ -319,7 +345,7 @@ footer{
     align-items: center;
     position: fixed;
     width: 257px;
-    height: 117.97px;
+    height: 100px;
     right: -147px;
     top: 45px;
     overflow-x: hidden;
@@ -329,7 +355,7 @@ footer{
     z-index: 2;
 }
 .static-msj img{
-    height: 115px;
+    height: 100px;
     width: 115px;
 }
 .static-msj:hover{
