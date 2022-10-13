@@ -17,14 +17,20 @@
     box-sizing: border-box;
     font-family: 'GraphikTT',Arial,sans-serif;
     scroll-behavior: smooth;
+    /* overflow-x: hidden; */
 }
 a{
     text-decoration: none;
 }
 :root{
-    --primary_color: #0D3D86;
-    --secondary-color: #1676BB;
-    --light-blue: #3994C8;
+    --primary_color: #D61F1F;
+    --secondary-color: #BB2016;
+    --light-red: #E10000;
+    --red-type3:#D61F1F;
+    --dark-red:#7D0101;
+    --opacity-red:#D94D4D;
+    --text-red:#D91919;
+    --border-red:#BD1414;
     --gray: #ACB2B5;
     --white:white;
     --black:black;
@@ -34,7 +40,7 @@ body{
 }
 /*prenav*/
 .prenav{
-    background-color: var(--primary_color);
+    background-color: var(--dark-red);
     color: var(--white);
     display: flex;
     font-size: 14px;
@@ -81,23 +87,23 @@ nav li{
     cursor: pointer;
 }
 
-nav .logo{
+nav .nav__logo{
     display: flex;
     align-items: center;
 }
 
-.logo img{
+.nav__logo img{
     width: 150px;
     height: 80px;
     margin: 10px;
 }
 
-.logo{
+.nav__logo{
     font-size: 20px;
     font-weight: 700;
 }
 
-.barrita{
+.nav__barrita{
     background-color: var(--white);
     width: 5px;
     height: 80px;
@@ -125,7 +131,7 @@ nav .logo{
     flex-direction: row;
     align-items: flex-end;
 }
-.main .title{
+.main__title{
     margin: 0 0 30px 50px;
     display: flex;
     flex-direction: column;
@@ -139,7 +145,7 @@ nav .logo{
     height: 510px;
 } 
 .main button{
-    background-color: var(--primary_color);
+    background-color: var(--dark-red);
     color: var(--white);
     border-radius: 50px;
     border: none;
@@ -155,25 +161,26 @@ nav .logo{
     justify-content: center;
     border-width: 0px 0px 10px 10px;
     border-style: solid;
-    border-color: var(--light-blue);
+    border-color: var(--border-red);
 }
 .somos img{
     width: 775px;
     height:720px;
     padding: 20px;
 }
-.textSomos{
+.somos__textSomos{
     width:600px;
     padding: 20px;
 }
-h2{
-    font-size: 50px;
-    text-align: center;
-    color: var(--secondary-color);
+.somos h2{
+    font-size: 45px;
+    text-align: left;
+    color: var(--text-red);
     font-weight: 400;
+    line-height:60px;
     margin:20px;
 }
-.textSomos p{
+.somos__textSomos p{
     font-size: 24px;
     text-align: justify;
     line-height: 40px;
@@ -188,7 +195,7 @@ h2{
     height:10px;
 }
 .barra1{
-    background-color: var(--light-blue);
+    background-color: var(--light-red);
 }
 .barra2{
     background-color: var(--gray);
@@ -197,14 +204,15 @@ h2{
 .somos2{
     display: flex;
     align-items: end;
+    margin: 50px 0;
 }
-.barblue{
+.somos2__BarRed{
     background-color: var(--primary_color);
     width: 100vw;
     height: 350px;
     z-index: -1;
     position: absolute;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .somos2__article{
     display: flex;
@@ -217,9 +225,9 @@ h2{
     height: 560px;
     z-index: 1;
     border: solid 20px var(--white);
-    border-radius: 20px;
+    border-radius: 10%;
 }
-.textBlue p{
+.somos2__text p{
     padding: 20px;
     width: 600px;
     color: var(--white);
@@ -227,28 +235,81 @@ h2{
     font-weight: 400;
     line-height: 55px;
     z-index: 3;
-    margin: 0 0 30px 0;
+    margin-bottom: 80px;
 }
-.textBlue h2{
+.somos2 h2{
     text-align: left;
-    font-size: 64px;
-    line-height: 160px;
+    font-size: 70px;
+    line-height: 90px;
+    font-weight:400;
+    color: var(--text-red)
 }
+/*Tornillos*/
+.tornillos{
+    margin: 0 auto;
+}
+.tornillos h2{
+    color: var(--dark-red);
+    font-size: 70px;
+    text-align:center;
+    font-weight: 600;
+    line-height:90px;
+    margin: 50px 0;
+}
+
+.tornillos__article__slide{
+    /* width:50%; */
+    background:var(--primary_color);
+    height:180px;
+
+}
+.tornillos__article{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.tornillos__article .slides, .tornillos__article .tornillos__text{
+    width:50%;
+}
+.slides{
+    display: flex;
+    flex-direction:column;
+    gap: 150px;
+}
+.slides p{
+    color: var(--text-red);
+    font-size: 40px;
+}
+.slides span{
+    font-weight: 700;
+}
+.tornillos__text p{
+    padding:30px;
+    text-align: justify;
+    font-size: 25px;
+    line-height:50px;
+    color:var(--black);
+}
+
 
 /*Proveedores*/
 .proveedores h2{
-    margin-bottom: 60px;
+    margin: 60px 0 0 30px;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 90px;
+    text-align:center;
 }
 
-.marcas{
+.proveedores__marcas{
     display: flex;
-    background-color: var(--light-blue);
+    background-color: var(--opacity-red);
     justify-content: space-evenly;
     padding: 20px 10px;
     flex-wrap: wrap;
     border-radius: 20px;
 }
-.marcas img{
+.proveedores__marcas img{
     width: 230px;
     height: 100px;
     margin: 10px 25px;
@@ -261,8 +322,8 @@ h2{
     margin: 50px auto;
 }
 
-/*products*/
-.contenido .products{
+/*productos*/
+.contenido .productos{
     margin-bottom: 0;
 }
 .barras{
@@ -274,11 +335,11 @@ h2{
     height:10px;
 }
 .barras .b2{
-    background-color: var(--light-blue);
+    background-color: var(--light-red);
     width: 59%;
     height:10px;
 }
-.products p{
+.productos p{
     font-size: 32px;
     line-height: 64px;
     text-align: center;
@@ -295,32 +356,34 @@ h2{
     justify-content: space-between;
 }
 .lb1{
-    background-color: var(--light-blue);
+    background-color: var(--light-red);
     height:45%;
 }
 .lb2{
-    background-color: var(--primary_color);
+    background-color: var(--dark-red);
     height:45%;
 }
 /*footer*/
 footer{
-    background-image: url('assets/footerbackground.png');
+    /* background-image: url('assets/footerbackground.png'); */
+    /* background: rgba(214, 31, 31, 0.5); */
+    background: linear-gradient(0deg, rgba(255, 16, 16, 0.6), rgba(255, 16, 16, 0.6)), url('assets/footerbackground.png');
     background-origin: border-box;
     width: 100%;
     background-size: 100% 100%;
     border-width: 40px 0;
     border-style: solid;
-    border-color: #0D3D86;
+    border-color: var(--dark-red);
 }
-.footercontent{
+.footer__content{
     display: flex;
     justify-content: space-evenly;
     padding:50px;
     margin: 0 auto;
     max-width: 1200px;
 }
-.footcard{
-    background: rgba(22, 118, 187, 0.8);
+.footer__card{
+    background: #F08282;
     color: var(--white);
     font-size: 24px;
     text-align:center;
@@ -333,7 +396,7 @@ footer{
     justify-content:center;
     margin:10px;
 }
-.footcard img{
+.footer__card img{
     margin-bottom: 45px;
 }
 /*Whatsapp img*/

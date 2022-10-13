@@ -1,0 +1,33 @@
+.Tornillosswiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .Tornillos-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #fff; */
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .Tornillos-slide img {
+        display: block;
+        width: 130px;
+        height: 130px;
+        /* background: linear-gradient(180deg, rgba(255, 0, 0, 0) 41.37%, rgba(255, 0, 0, 0.500658) 72.48%, #FF0000 96.68%), #FFFFFF; */
+        border-radius: 30px;
+        background:white
+      }

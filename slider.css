@@ -1,19 +1,6 @@
-html,
-body {
-  position: relative;
-  height: 100%;
-}
 
-body {
-  /* background: #eee; */
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-.mySwiper{
-  background: linear-gradient(180deg, #1676BB 0%, #80CAF7 100%);
+.MainmySwiper{
+  background: linear-gradient(0deg, rgba(224, 3, 0, 0.5), rgba(224, 3, 0, 0.5)), linear-gradient(359.23deg, #FF0000 0.61%, rgba(255, 0, 0, 0.740888) 33.31%, rgba(255, 0, 0, 0.488095) 63.37%, rgba(255, 116, 116, 0.266181) 83.18%, rgba(255, 255, 255, 0) 101.87%, rgba(255, 109, 109, 0.279695) 101.87%);
   border-radius: 20px 0px 0px 0px;
 }
 
@@ -23,19 +10,28 @@ body {
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+.Mainswiper-slide {
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0) 41.37%, rgba(255, 0, 0, 0.500658) 72.48%, #FF0000 96.68%), #FFFFFF;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
   background-position: center;
   background-size: cover;
   width: 250px;
-  /* height: 200px; */
-  border-radius: 30%;
-  /* background-color: aqua; */
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
+  height: 315px;
   border-radius: 30px;
+}
+.Mainswiper-slide p{
+  color: var(--white);
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 30px;
+}
+.Mainswiper-slide img {
+  display: block;
+  /* width: 100%; */
+  height: 200px;
+  /* border-radius: 10%; */
 }
 .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right{
   border-radius: 30px;
