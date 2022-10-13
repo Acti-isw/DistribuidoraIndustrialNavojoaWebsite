@@ -37,6 +37,7 @@ a{
 }
 body{
     background-color: var(--white);
+    /* padding-top: 145px; */
 }
 /*prenav*/
 .prenav{
@@ -46,6 +47,10 @@ body{
     font-size: 14px;
     height:45px;
     justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
 }
 .prenav img{
     width: 24px;
@@ -69,6 +74,10 @@ nav{
     align-items: center;
     padding-right: 200px;
     height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 45px;
+    z-index: 5;
 }
 nav a{
     color: var(--white);
@@ -85,6 +94,10 @@ nav ul{
 }
 nav li{
     cursor: pointer;
+}
+
+nav li a:hover{
+    color: var(--gray);
 }
 
 nav .nav__logo{
@@ -121,7 +134,7 @@ nav .nav__logo{
 
 .main{
     /* background-color; */
-    margin: 30px 0;
+    margin: 175px 0 30px 0;
     background: linear-gradient(90deg, #FF0000 0%, rgba(255, 0, 0, 0.740888) 32.29%, rgba(255, 0, 0, 0.488095) 61.98%, rgba(255, 109, 109, 0.279695) 99.99%, rgba(255, 255, 255, 0) 100%);
     font-weight: 400;
 }
@@ -208,7 +221,7 @@ nav .nav__logo{
 }
 .somos2__BarRed{
     background-color: var(--primary_color);
-    width: 100vw;
+    width: 100%;
     height: 350px;
     z-index: -1;
     position: absolute;
@@ -323,6 +336,10 @@ nav .nav__logo{
 }
 
 /*productos*/
+
+.productos h2{
+
+}
 .contenido .productos{
     margin-bottom: 0;
 }
@@ -396,6 +413,9 @@ footer{
     justify-content:center;
     margin:10px;
 }
+.footer__card:hover{
+    background-color: #D94D4D;
+}
 .footer__card img{
     margin-bottom: 45px;
 }
@@ -415,7 +435,7 @@ footer{
     cursor: pointer;
     will-change: transform;
     transition:transform 1s;
-    z-index: 2;
+    z-index: 6;
 }
 .static-msj img{
     height: 100px;
