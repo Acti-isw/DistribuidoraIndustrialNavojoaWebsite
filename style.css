@@ -82,6 +82,7 @@ nav{
 
 .nav2{
     top:0px;
+    height: 50px;
 }
 
 nav a{
@@ -110,10 +111,16 @@ nav .nav__logo{
     align-items: center;
 }
 
-.nav__logo img{
+.logo{
     width: 150px;
     height: 80px;
     margin: 10px;
+}
+
+.logo2{
+    width: 100px;
+    height: 40px;
+    margin: 5px 20px;
 }
 
 .nav__logo{
@@ -245,7 +252,7 @@ nav .nav__logo{
     border: solid 20px var(--white);
     border-radius: 10%;
 }
-.somos2__text p{
+.somos2__text p {
     padding: 20px;
     width: 600px;
     color: var(--white);

@@ -24,3 +24,43 @@ var swiper = new Swiper(".MainmySwiper", {
     },
   });
   
+
+
+// class Person {
+//   /**
+//    * 
+//    * @param {number} age 
+//    * @param {string} name 
+//    */
+//   constructor(age, name) {
+//     this.age = age;
+//     this.name = name;
+//   }
+// }
+
+// class Soldier extends Person {
+
+// }
+
+// /**
+//  * Este metodo sirve como prueba
+//  * @param {Person[]} a 
+//  * @param {Soldier} b 
+//  */
+// const myMethod = (a, b) => {
+//   const arrayOfAges = a.map(v => v.age);
+  
+
+// }
+
+// const asd = document.getElementById('nav');
+
+// /**
+//  * 
+//  * @param {HTMLInputElement} param1 
+//  */
+// function a(param1) {
+//   param1.
+// }
+
+// const c = myMethod()
