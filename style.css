@@ -79,6 +79,11 @@ nav{
     top: 45px;
     z-index: 5;
 }
+
+.nav2{
+    top:0px;
+}
+
 nav a{
     color: var(--white);
 }
