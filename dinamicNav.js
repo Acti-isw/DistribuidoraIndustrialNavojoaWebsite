@@ -2,7 +2,14 @@
       if($(this).scrollTop()>0){
           $('nav').addClass('nav2')
           $('#logo').addClass('logo2')
+          $('.nav__barrita').addClass('nav__barrita2')
+          $('.nav__logo__p').addClass('nav__logo__p2')
+          $('.nav__logo').addClass('nav__logo2')
       }else{
         $('nav').removeClass('nav2')
+        $('#logo').removeClass('logo2')
+        $('.nav__barrita').removeClass('nav__barrita2')
+        $('.nav__logo__p').removeClass('nav__logo__p2')
+        $('.nav__logo').removeClass('nav__logo2')
       }
     })

@@ -21,6 +21,7 @@
 }
 a{
     text-decoration: none;
+    color: var(--white)
 }
 :root{
     --primary_color: #D61F1F;
@@ -66,6 +67,9 @@ body{
 #ico-ubicacion{
     width: 16.35px;
 }
+.prenav a{
+    color: var(--white);
+}
 /*Nav*/
 nav{
     background-color: var(--secondary-color);
@@ -88,13 +92,19 @@ nav{
 nav a{
     color: var(--white);
 }
-nav p{
-    margin-left: 10px;
+.nav__logo__p{
+    margin-right: 50px;
+}
+.nav__logo__p2{
+    width:0;
+    height:0;
+    margin:0;
+    opacity: 0;
 }
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     width: 100%;
     font-size: 20px;
 }
@@ -106,32 +116,42 @@ nav li a:hover{
     color: var(--gray);
 }
 
-nav .nav__logo{
+.nav__logo{
     display: flex;
     align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    /* margin-right: 20px; */
+}
+.nav__logo2{
+    width: 300px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content:center;
 }
 
-.logo{
+.nav__logo__img{
     width: 150px;
     height: 80px;
-    margin: 10px;
+    margin: 10px 20px;
 }
+
 
 .logo2{
     width: 100px;
     height: 40px;
-    margin: 5px 20px;
 }
 
-.nav__logo{
-    font-size: 20px;
-    font-weight: 700;
-}
 
 .nav__barrita{
     background-color: var(--white);
+    margin:10px;
     width: 5px;
     height: 80px;
+}
+.nav__barrita2{
+    width: 0;
+    height:0;
 }
 /*contenido*/
 .contenido{
@@ -173,11 +193,17 @@ nav .nav__logo{
     background-color: var(--dark-red);
     color: var(--white);
     border-radius: 50px;
-    border: none;
+    border:solid 3px var(--dark-red);
     font-size: 32px;
     padding: 15px;
     max-width: 230px;
     font-weight: 700;
+}
+
+.main button:hover{
+    border:solid 3px var(--dark-red);
+    background-color: var(--white);
+    color: var(--dark-red);
 }
 
 /*Section somos 1*/
@@ -238,6 +264,7 @@ nav .nav__logo{
     z-index: -1;
     position: absolute;
     margin-bottom: 100px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
 }
 .somos2__article{
     display: flex;
@@ -299,7 +326,9 @@ nav .nav__logo{
 .slides{
     display: flex;
     flex-direction:column;
-    gap: 150px;
+    /* gap: 150px; */
+    height: 600px;
+    justify-content:space-evenly;
 }
 .slides p{
     color: var(--text-red);
@@ -346,28 +375,46 @@ nav .nav__logo{
     text-align:center;
     margin: 50px auto;
 }
-
-/*productos*/
-
-.productos h2{
-
-}
-.contenido .productos{
-    margin-bottom: 0;
-}
 .barras{
     margin-bottom: 50px;
 }
 .barras .b1{
     background-color: var(--gray);
-    width: 19%;
+    width: 6%;
     height:10px;
 }
 .barras .b2{
     background-color: var(--light-red);
-    width: 59%;
+    width: 86%;
     height:10px;
 }
+/*productos*/
+.productos__title{
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.productos h2{
+    color: var(--text-red);
+    font-size: 60px;
+    font-weight: 600;
+    line-height:40px;
+    margin:0 10px;
+}
+.contenido .productos{
+    margin-bottom: 0;
+}
+.productos__title .b1{
+    background-color: var(--dark-red);
+    width: 24%;
+    height:10px;
+}
+/* .productos__title .b2{
+    background-color: var(--light-red);
+    width: 59%;
+    height:10px;
+} */
 .productos p{
     font-size: 32px;
     line-height: 64px;
@@ -391,6 +438,25 @@ nav .nav__logo{
 .lb2{
     background-color: var(--dark-red);
     height:45%;
+}
+/*maps*/
+.maps{
+    background-color: var(--dark-red);
+    color: var(--white);
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.maps h3{
+    font-weight: 600;
+    font-size: 60px;
+    line-height:40px;
+    text-align:center;
+    margin: 20px 0;
+}
+.maps__mapa{
+    width: 1100px;
 }
 /*footer*/
 footer{
