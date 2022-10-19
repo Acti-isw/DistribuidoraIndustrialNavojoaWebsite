@@ -21,6 +21,7 @@
 }
 a{
     text-decoration: none;
+    color: var(--white)
 }
 :root{
     --primary_color: #D61F1F;
@@ -66,13 +67,16 @@ body{
 #ico-ubicacion{
     width: 16.35px;
 }
+.prenav a{
+    color: var(--white);
+}
 /*Nav*/
 nav{
     background-color: var(--secondary-color);
     color: var(--white);
     display: flex;
     align-items: center;
-    padding-right: 200px;
+    padding-right: 260px;
     height: 100px;
     position: fixed;
     width: 100%;
@@ -88,13 +92,19 @@ nav{
 nav a{
     color: var(--white);
 }
-nav p{
-    margin-left: 10px;
+.nav__logo__p{
+    margin-right: 50px;
+}
+.nav__logo__p2{
+    width:0;
+    height:0;
+    margin:0;
+    opacity: 0;
 }
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     width: 100%;
     font-size: 20px;
 }
@@ -106,32 +116,42 @@ nav li a:hover{
     color: var(--gray);
 }
 
-nav .nav__logo{
+.nav__logo{
     display: flex;
     align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    /* margin-right: 20px; */
+}
+.nav__logo2{
+    width: 300px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content:center;
 }
 
-.logo{
+.nav__logo__img{
     width: 150px;
     height: 80px;
-    margin: 10px;
+    margin: 10px 20px;
 }
+
 
 .logo2{
     width: 100px;
     height: 40px;
-    margin: 5px 20px;
 }
 
-.nav__logo{
-    font-size: 20px;
-    font-weight: 700;
-}
 
 .nav__barrita{
     background-color: var(--white);
+    margin:10px;
     width: 5px;
     height: 80px;
+}
+.nav__barrita2{
+    width: 0;
+    height:0;
 }
 /*contenido*/
 .contenido{
@@ -173,11 +193,17 @@ nav .nav__logo{
     background-color: var(--dark-red);
     color: var(--white);
     border-radius: 50px;
-    border: none;
+    border:solid 3px var(--dark-red);
     font-size: 32px;
     padding: 15px;
     max-width: 230px;
     font-weight: 700;
+}
+
+.main button:hover{
+    border:solid 3px var(--dark-red);
+    background-color: var(--white);
+    color: var(--dark-red);
 }
 
 /*Section somos 1*/
@@ -238,6 +264,7 @@ nav .nav__logo{
     z-index: -1;
     position: absolute;
     margin-bottom: 100px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25);
 }
 .somos2__article{
     display: flex;
@@ -299,7 +326,9 @@ nav .nav__logo{
 .slides{
     display: flex;
     flex-direction:column;
-    gap: 150px;
+    /* gap: 150px; */
+    height: 600px;
+    justify-content:space-evenly;
 }
 .slides p{
     color: var(--text-red);
@@ -346,28 +375,46 @@ nav .nav__logo{
     text-align:center;
     margin: 50px auto;
 }
-
-/*productos*/
-
-.productos h2{
-
-}
-.contenido .productos{
-    margin-bottom: 0;
-}
 .barras{
     margin-bottom: 50px;
 }
 .barras .b1{
     background-color: var(--gray);
-    width: 19%;
+    width: 6%;
     height:10px;
 }
 .barras .b2{
     background-color: var(--light-red);
-    width: 59%;
+    width: 86%;
     height:10px;
 }
+/*productos*/
+.productos__title{
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.productos h2{
+    color: var(--text-red);
+    font-size: 60px;
+    font-weight: 600;
+    line-height:40px;
+    margin:0 10px;
+}
+.contenido .productos{
+    margin-bottom: 0;
+}
+.productos__title .b1{
+    background-color: var(--dark-red);
+    width: 24%;
+    height:10px;
+}
+/* .productos__title .b2{
+    background-color: var(--light-red);
+    width: 59%;
+    height:10px;
+} */
 .productos p{
     font-size: 32px;
     line-height: 64px;
@@ -391,6 +438,25 @@ nav .nav__logo{
 .lb2{
     background-color: var(--dark-red);
     height:45%;
+}
+/*maps*/
+.maps{
+    background-color: var(--dark-red);
+    color: var(--white);
+    padding:10px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.maps h3{
+    font-weight: 600;
+    font-size: 60px;
+    line-height:40px;
+    text-align:center;
+    margin: 20px 0;
+}
+.maps__mapa{
+    width: 1100px;
 }
 /*footer*/
 footer{
@@ -462,4 +528,217 @@ footer{
     line-height: 22px;
     text-align: center;
     color: var(--white);
+}
+
+@media(max-width:768px){
+    .contenido{
+        /* max-width: 100%; */
+    }
+    /*Prenav*/
+    .prenav{
+        position: fixed;
+        /* width: 100%; */
+    }
+    .prenav p{
+        display: none;
+    }
+    .prenav div{
+        margin: 10px 20px;
+    }
+    /*nav*/
+    nav{
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 0;
+        margin-top: 45px;
+        justify-content: center;
+        position: relative;
+    }
+    nav .nav__logo{
+        content: url('./assets/logoColor.png');
+    }
+    .nav__logo2{
+        
+    }
+    nav ul, .nav__barrita, .nav__logo__p{
+        display: none;
+    }
+
+
+    /*main*/
+    .main{
+        margin: 50px 0;
+        background: linear-gradient(0deg, rgba(213, 0, 0, 0.8), rgba(213, 0, 0, 0.8)), url('./assets/image\ 1.png');
+        background-size: cover;
+        color: var(--white);
+    }
+    .main h1{
+        font-size: 80px;
+    }
+    .main__title{
+        margin: 10px;
+        text-align: center;
+        gap: 20px;
+    }
+    .main img{
+        display: none;
+    }
+
+    /*somos1*/
+
+    .somos{
+        flex-direction: column;
+        border: none;
+    }
+
+    .somos img{
+        width: auto;
+        height: auto;
+        content: url('./assets/somos1mobile.png');
+        padding: 5px;
+    }
+    .somos__textSomos{
+        width: auto;
+        padding: 0;
+    }
+    .somos__textSomos p{
+        font-size: 18px;
+        margin: 0 16px;
+    }
+    .barras{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .barra2{
+        display: none;
+    }
+
+    .somos h2{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /*Somos 2*/
+    .somos2__BarRed{
+        display: none;
+    }
+    .somos2 h2{
+        font-size: 50px;
+        text-align: center;
+        font-weight: 600;
+        color: var(--black);
+    }
+    .somos2 p{
+        background-color: var(--primary_color);
+        margin: 0;
+        text-align: justify;
+    }
+    .somos2__text p{
+        width: 100%;
+    }
+
+    .somos2__article{
+        flex-direction: column;
+        align-items: unset;
+    }
+    .somos2__article img{
+        width: 100vw;
+        height: 100%;
+    }
+    /*tornillos*/
+    .tornillos h2{
+        font-size: 50px;
+        line-height: unset;
+        font-weight: 600;
+    }
+    .tornillos__article{
+        flex-direction: column;
+    }
+    .slides p{
+        font-size: 20px;
+    }
+    .tornillos__article .slides, .tornillos__article .tornillos__text{
+        width:100%;
+    }
+    /*Proveedores*/
+    .proveedores h2{
+        font-size: 50px;
+    }
+    .proveedores__marcas{
+        padding: 10px 5px;
+    }
+    .proveedores__marcas img{
+        width: 70px;
+        height: 50px;
+        margin: 5px 10px;
+    }
+    .proveedores p{
+        text-align: justify;
+    }
+    /*productos*/
+    .productos h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .b1{
+        display: none;
+    }
+    .lateral_bar{
+        display: none;
+    }
+    .productos p{
+        font-size:22px;
+        text-align: justify;
+        padding: 0 15px;
+        line-height: 25px;
+    }
+    .productos__title{
+        justify-content: center;
+    }
+
+    /*Mapa*/
+    .maps{
+        align-items: stretch;
+        background-color: var(--white); 
+        padding: 0;
+    }
+    .maps__mapa{
+        width: auto;
+        border: solid 20px var(--dark-red);
+        border-width: 20px 20px 0 20px;
+    }
+    .maps h3{
+        font-size: 40px;
+        color: var(--dark-red);
+        
+    }
+
+    /*Footer*/
+
+    .footer__content{
+        flex-direction: column;
+    }
+    .footer__card{
+        flex-direction: row;
+        margin:5px;
+        width: auto;
+        justify-content:flex-start;
+        align-items: center;
+        font-size: unset;
+    }
+    .footer__card img{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 0;
+    }
+    .footer__card p{
+        margin: 0 auto;
+    }
+    .static-msj{
+        display: none;
+    }
+
+
+
 }
