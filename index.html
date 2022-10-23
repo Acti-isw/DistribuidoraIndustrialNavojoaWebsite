@@ -60,6 +60,18 @@
                     </a>
                 </li>
                 <li>
+                    <a href="#tornilleria">
+                        <img src="assets/iconos/iconarrow.png"></img>
+                        Tornilleria
+                    </a>
+                </li>
+                <li>
+                    <a href="#proveedores">
+                        <img src="assets/iconos/iconarrow.png"></img>
+                        Proveedores
+                    </a>
+                </li>
+                <li>
                     <a href="#productos">
                         <img src="assets/iconos/iconarrow.png"></img>
                         Catalogo
@@ -74,18 +86,52 @@
             </ul>
         </nav>
         <div class="menuMobile">
-            <div class="barrita"></div>
-            <div class="menuMobile__btn">
+            <div class="menuMobile__barrita"></div>
+            <div class="menuMobileHead">
+                <button id="btn" class="menuMobile__btn">
+                    <img src="./assets/iconos/menu-regular-24.png" alt="">
+                    Menú
+                </button>
                 <ul class="menuMobile__lista">
-                    <li>
-                        <a href="#inicio">
+                    <li class="menuMobile__lista__item">
+                        <a href="#inicio" class="abtn">
                                 <img src="assets/iconos/iconarrow.png"></img>
                                 Inicio
                         </a>
                     </li>
+                    <li class="menuMobile__lista__item">
+                        <a href="#quienesSomos" class="abtn">
+                                <img src="assets/iconos/iconarrow.png"></img>
+                                ¿Quienes somos?
+                        </a>
+                    </li>
+                    <li class="menuMobile__lista__item">
+                        <a href="#tornilleria" class="abtn">
+                                <img src="assets/iconos/iconarrow.png"></img>
+                                Tornilleria
+                        </a>
+                    </li>
+                    <li class="menuMobile__lista__item">
+                        <a href="#proveedores" class="abtn">
+                                <img src="assets/iconos/iconarrow.png"></img>
+                                Proveedores
+                        </a>
+                    </li>
+                    <li class="menuMobile__lista__item">
+                        <a href="#productos" class="abtn">
+                                <img src="assets/iconos/iconarrow.png"></img>
+                                Catalogo
+                        </a>
+                    </li>
+                    <li class="menuMobile__lista__item">
+                        <a href="#contacto" class="abtn">
+                                <img src="assets/iconos/iconarrow.png"></img>
+                                Contacto
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="barrita"></div>
+            <div class="menuMobile__barrita"></div>
         </div>
         <section class="main">
             <article class="contenido" >
@@ -129,7 +175,7 @@
             </article>
         </section>
 
-        <section class="tornillos contenido">
+        <section class="tornillos contenido" id="tornilleria">
             <h2>Proveedor industrial de tornilleria</h2>
             <article class="tornillos__article contenido">
                 <div class="slides">
@@ -206,7 +252,7 @@
             </article>
         </section>
 
-        <section class="proveedores contenido">
+        <section class="proveedores contenido" id="proveedores">
             <h2>Nuestros proveedores</h2>
             <div class="barras">
                 <div class="b1"></div>
@@ -311,34 +357,35 @@
                 </div>
                 </div>
             </section>
-    </div>
-    <section class="maps contenido">
-            <h3>¡Encuentranos!</h3>
-            <iframe class="maps__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d888.347899146547!2d-109.4557009!3d27.0493846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86b81b9e7db4d279%3A0xf3875dcd0f0a825c!2sMahconsa!5e0!3m2!1ses!2smx!4v1666197492666!5m2!1ses!2smx" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </section>
-    <footer id="contacto">
-        <div class="footer__content">
-            <div class="footer__card">
-                <img src="assets/iconos/bigPhone.png" alt="">
-                <p>+52 - 642 - 116 - 6931</p>
+   
+        <section class="maps contenido">
+                <h3>¡Encuentranos!</h3>
+                <iframe class="maps__mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d888.347899146547!2d-109.4557009!3d27.0493846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86b81b9e7db4d279%3A0xf3875dcd0f0a825c!2sMahconsa!5e0!3m2!1ses!2smx!4v1666197492666!5m2!1ses!2smx" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer id="contacto">
+            <div class="footer__content">
+                <div class="footer__card">
+                    <img src="assets/iconos/bigPhone.png" alt="">
+                    <p>+52 - 642 - 116 - 6931</p>
+                </div>
+                <div class="footer__card">
+                    <img src="assets/iconos/bigCalendar.png" alt="">
+                    <p>Lunes a viernes. 09:00 am a 06:00 pm</p>
+                </div>
+                <div class="footer__card">
+                    <img src="assets/iconos/bigEmail.png" alt="">
+                    <p>Ventas@dinav.com.mx</p>
+                </div>
             </div>
-            <div class="footer__card">
-                <img src="assets/iconos/bigCalendar.png" alt="">
-                <p>Lunes a viernes. 09:00 am a 06:00 pm</p>
-            </div>
-            <div class="footer__card">
-                <img src="assets/iconos/bigEmail.png" alt="">
-                <p>Ventas@dinav.com.mx</p>
-            </div>
-        </div>
 
-    </footer>
-    <a target="_blank" href="https://wa.me/+526421166931">
-    <div class="static-msj">
-        <img src="assets/iconos/whatsapp.png" alt="">
-        <h3>¡Envianos un mensaje!</h3>
+        </footer>
+        <a target="_blank" href="https://wa.me/+526421166931">
+        <div class="static-msj">
+            <img src="assets/iconos/whatsapp.png" alt="">
+            <h3>¡Envianos un mensaje!</h3>
+        </div>
+        </a>
     </div>
-    </a>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
     <script src="./tornillos_slide.js"></script>

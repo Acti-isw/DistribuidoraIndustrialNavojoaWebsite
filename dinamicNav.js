@@ -13,3 +13,24 @@
         $('.nav__logo').removeClass('nav__logo2')
       }
     })
+
+    let toggle = false;
+
+    const abtn = $('.abtn')
+    abtn.toArray().forEach(element => {
+      element.addEventListener("click",toggleMenu);
+    });
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click",toggleMenu)
+
+    function toggleMenu(){
+      toggle = !toggle;
+      if(toggle){
+        $('#btn').addClass('menuMobile__btn2')
+        $('.menuMobile__lista__item').addClass('menuMobile__lista__item__active')
+
+      }else{
+        $('#btn').removeClass('menuMobile__btn2')
+        $('.menuMobile__lista__item').removeClass('menuMobile__lista__item__active')
+      }
+    }

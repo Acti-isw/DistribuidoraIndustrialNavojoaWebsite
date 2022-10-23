@@ -6,6 +6,7 @@ var swiper = new Swiper(".mySwiperTornillo", {
     freeMode: true,
     autoplay: {
       delay: 2500,
+      // delay: 100000,
       disableOnInteraction: false,
     },
     pagination: {
