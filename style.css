@@ -4,18 +4,20 @@
     src: url('assets/fonts/GraphikRegular.otf')format('truetype');
     font-style: normal;
     font-weight: normal;
+    font-display:swap;
 }
 @font-face {
     font-family: 'GraphikTT';
     src: url('assets/fonts/GraphikBold.otf')format('truetype');
     font-style: normal;
     font-weight: bold;
+    font-display:swap;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'GraphikTT',Arial,sans-serif;
+    font-family: 'GraphikTT', Arial, sans-serif;
     scroll-behavior: smooth;
     /* overflow-x: hidden; */
 }
@@ -113,6 +115,7 @@ nav li{
 }
 nav li img{
     width:15px;
+    height:9px;
 }
 
 nav li a:hover{
@@ -503,6 +506,8 @@ footer{
 }
 .footer__card img{
     margin-bottom: 45px;
+    width: 120px;
+    height: 120px;
 }
 /*Whatsapp img*/
 .static-msj{
@@ -538,9 +543,10 @@ footer{
 }
 
 @media(max-width:1199px){
-    .contenido{
-        /* max-width: 100%; */
+    /* .contenido{
+        //max-width: 100%; 
     }
+     */
     /*Prenav*/
     .prenav{
         position: absolute;
@@ -661,7 +667,7 @@ footer{
     }
 
     .somos img{
-        width: auto;
+        width: 100%;
         height: auto;
         content: url('./assets/somos1mobile.avif');
         padding: 5px;
