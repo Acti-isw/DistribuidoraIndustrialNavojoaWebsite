@@ -93,7 +93,7 @@ nav a{
     color: var(--white);
 }
 .nav__logo__p{
-    margin-right: 50px;
+    margin-right: 20px;
 }
 .nav__logo__p2{
     width:0;
@@ -106,10 +106,13 @@ nav ul{
     display: flex;
     justify-content:space-between;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
 }
 nav li{
     cursor: pointer;
+}
+nav li img{
+    width:15px;
 }
 
 nav li a:hover{
@@ -180,13 +183,15 @@ nav li a:hover{
     align-items: flex-end;
 }
 .main__title{
-    margin: 0 0 30px 50px;
+    margin: 0 20px 30px 50px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 .main h1{
-    font-size: 96px;
+    font-size: 50px;
 }
 .main img{
     width: 670px;
@@ -194,9 +199,9 @@ nav li a:hover{
 } 
 .main button{
     background-color: var(--dark-red);
+    border: none;
     color: var(--white);
     border-radius: 50px;
-    border:solid 3px var(--dark-red);
     font-size: 32px;
     padding: 15px;
     max-width: 230px;
@@ -204,9 +209,8 @@ nav li a:hover{
 }
 
 .main button:hover{
-    border:solid 3px var(--dark-red);
-    background-color: var(--white);
-    color: var(--dark-red);
+    background-color: var(--border-red);
+    color: var(--white);
 }
 
 /*Section somos 1*/
@@ -309,7 +313,7 @@ nav li a:hover{
     text-align:center;
     font-weight: 600;
     line-height:90px;
-    margin: 50px 0;
+    margin-top: 50px;
 }
 
 .tornillos__article__slide{
@@ -425,7 +429,7 @@ nav li a:hover{
 }
 .downtext{
     display: flex;
-
+    align-items:center;
 }
 .lateral_bar{
     width:20px;
@@ -463,9 +467,9 @@ nav li a:hover{
 }
 /*footer*/
 footer{
-    /* background-image: url('assets/footerbackground.png'); */
+    /* background-image: url('assets/footerbackground.avif'); */
     /* background: rgba(214, 31, 31, 0.5); */
-    background: linear-gradient(0deg, rgba(255, 16, 16, 0.6), rgba(255, 16, 16, 0.6)), url('assets/footerbackground.png');
+    background: linear-gradient(0deg, rgba(255, 16, 16, 0.6), rgba(255, 16, 16, 0.6)), url('assets/footerbackground.avif');
     background-origin: border-box;
     width: 100%;
     background-size: 100% 100%;
@@ -560,7 +564,7 @@ footer{
         top:auto;
     }
     nav .nav__logo{
-        content: url('./assets/logoColor.png');
+        content: url('./assets/logoColor.avif');
     }
     .nav__logo2{
         width:auto;
@@ -630,12 +634,12 @@ footer{
     /*main*/
     .main{
         margin: 40px 0;
-        background: linear-gradient(0deg, rgba(213, 0, 0, 0.8), rgba(213, 0, 0, 0.8)), url('./assets/image\ 1.png');
+        background: linear-gradient(0deg, rgba(213, 0, 0, 0.8), rgba(213, 0, 0, 0.8)), url('./assets/image\ 1.avif');
         background-size: cover;
         color: var(--white);
     }
     .main h1{
-        font-size: 80px;
+        font-size: 30px;
     }
     .main__title{
         margin: 10px;
@@ -659,7 +663,7 @@ footer{
     .somos img{
         width: auto;
         height: auto;
-        content: url('./assets/somos1mobile.png');
+        content: url('./assets/somos1mobile.avif');
         padding: 5px;
     }
     .somos__textSomos{
@@ -727,7 +731,8 @@ footer{
     }
     /*Proveedores*/
     .proveedores h2{
-        font-size: 50px;
+        font-size: 25px;
+        margin: 0 auto;
     }
     .proveedores__marcas{
         padding: 10px 5px;
@@ -773,7 +778,7 @@ footer{
         border-width: 20px 20px 0 20px;
     }
     .maps h3{
-        font-size: 40px;
+        font-size: 30px;
         color: var(--dark-red);
         
     }
@@ -782,6 +787,7 @@ footer{
 
     .footer__content{
         flex-direction: column;
+        padding: 0;
     }
     .footer__card{
         flex-direction: row;
