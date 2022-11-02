@@ -470,9 +470,9 @@ nav li a:hover{
 }
 /*footer*/
 footer{
-    /* background-image: url('assets/footerbackground.avif'); */
+    /* background-image: url('assets/footerbackground.webp'); */
     /* background: rgba(214, 31, 31, 0.5); */
-    background: linear-gradient(0deg, rgba(255, 16, 16, 0.6), rgba(255, 16, 16, 0.6)), url('assets/footerbackground.avif');
+    background: linear-gradient(0deg, rgba(255, 16, 16, 0.6), rgba(255, 16, 16, 0.6)), url('assets/footerbackground.webp');
     background-origin: border-box;
     width: 100%;
     background-size: 100% 100%;
@@ -570,7 +570,7 @@ footer{
         top:auto;
     }
     nav .nav__logo{
-        content: url('./assets/logoColor.avif');
+        content: url('./assets/logoColor.webp');
     }
     .nav__logo2{
         width:auto;
@@ -640,7 +640,7 @@ footer{
     /*main*/
     .main{
         margin: 40px 0;
-        background: linear-gradient(0deg, rgba(213, 0, 0, 0.8), rgba(213, 0, 0, 0.8)), url('./assets/image\ 1.avif');
+        background: linear-gradient(0deg, rgba(213, 0, 0, 0.8), rgba(213, 0, 0, 0.8)), url('./assets/image\ 1.webp');
         background-size: cover;
         color: var(--white);
     }
@@ -669,7 +669,7 @@ footer{
     .somos img{
         width: 100%;
         height: auto;
-        content: url('./assets/somos1mobile.avif');
+        content: url('./assets/somos1mobile.webp');
         padding: 5px;
     }
     .somos__textSomos{
