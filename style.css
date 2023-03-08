@@ -74,8 +74,8 @@ body{
 }
 /*Nav*/
 nav{
-    background-color: var(--secondary-color);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
     display: flex;
     align-items: center;
     padding-right: 260px;
@@ -92,7 +92,8 @@ nav{
 }
 
 nav a{
-    color: var(--white);
+    color: var(--black);
+    padding:5px;
 }
 .nav__logo__p{
     margin-right: 20px;
@@ -119,7 +120,11 @@ nav li img{
 }
 
 nav li a:hover{
-    color: var(--gray);
+    color: var(--secondary-color);
+    /* color: var(--white);
+    background-color: var(--secondary-color);
+    border-radius: 10px; */
+   
 }
 
 .nav__logo{
@@ -150,7 +155,7 @@ nav li a:hover{
 
 
 .nav__barrita{
-    background-color: var(--white);
+    background-color: var(--black);
     margin:10px;
     width: 5px;
     height: 80px;
@@ -175,7 +180,7 @@ nav li a:hover{
 
 .main{
     /* background-color; */
-    margin: 175px 0 30px 0;
+    margin: 150px 0 30px 0;
     background: linear-gradient(90deg, #FF0000 0%, rgba(255, 0, 0, 0.740888) 32.29%, rgba(255, 0, 0, 0.488095) 61.98%, rgba(255, 109, 109, 0.279695) 99.99%, rgba(255, 255, 255, 0) 100%);
     font-weight: 400;
 }
