@@ -72,6 +72,9 @@ body{
 .prenav a{
     color: var(--white);
 }
+.social-media--icon{
+    display:none;
+}
 /*Nav*/
 nav{
     background-color: var(--white);
@@ -497,8 +500,8 @@ footer{
     color: var(--white);
     font-size: 24px;
     text-align:center;
-    padding: 30px;
-    width: 315px;
+    padding: 20px;
+    width: 270px;
     border-radius: 40px;
     display: flex;
     flex-direction:column;
@@ -511,8 +514,17 @@ footer{
 }
 .footer__card img{
     margin-bottom: 45px;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
+}
+.footer__card__redes-sociales{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.footer__card__redes-sociales img{
+    margin-bottom:0;
 }
 /*Whatsapp img*/
 .static-msj{
@@ -562,6 +574,14 @@ footer{
     }
     .prenav div{
         margin: 10px 20px;
+    }
+    .social-media--icon{
+        display: block;
+    }
+    .social-media--icon img{
+        width:24px;
+        height: 24px;
+        fill: white;
     }
     /*nav*/
     nav{
@@ -818,5 +838,9 @@ footer{
     }
     .static-msj{
         display: none;
+    }
+    .redes-sociales{
+        flex-direction: column;
+        gap: 10px;
     }
 }
