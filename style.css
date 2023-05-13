@@ -509,6 +509,9 @@ footer{
     justify-content:center;
     margin:10px;
 }
+.footer__phone{
+    font-size: 20px;
+}
 .footer__card:hover{
     background-color: #D94D4D;
 }
