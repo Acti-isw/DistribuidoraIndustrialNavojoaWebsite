@@ -49,7 +49,7 @@ body{
     display: flex;
     font-size: 14px;
     height:45px;
-    justify-content: center;
+    justify-content: space-evenly;
     position: absolute;
     top: 0;
     width: 100%;
@@ -62,9 +62,22 @@ body{
 .prenav div{
     display: flex;
     align-items: center;
-    margin: 10px 50px;
+    margin: 10px 10px;
     gap: 10px;
-
+}
+.tooltip-container{
+    position: relative;
+}
+.tooltip{
+    visibility: hidden;
+    background-color: var(--opacity-red);
+    padding: 3px;
+    border-radius: 10px;
+    position:absolute;
+    width: 155px;
+    top: 18px;
+    right: -80px;
+    z-index: 10 !important;
 }
 #ico-ubicacion{
     width: 16.35px;
@@ -585,6 +598,12 @@ footer{
         width:24px;
         height: 24px;
         fill: white;
+    }
+    nav{
+        z-index: 0;
+    }
+    .tooltip-container:hover .tooltip{
+        visibility: visible;
     }
     /*nav*/
     nav{
